@@ -1,0 +1,60 @@
+.header
+  background-color: $footer-bg-color
+  height: 66px
+  position: relative
+  z-index: 100
+  &__container
+    display: flex
+    height: 66px
+    justify-content: space-between
+    align-items: center
+    padding: 0 16px
+  &__burger,
+  &__elipsis 
+    display: none
+  &__burger
+    width: 30px
+    height: 24px
+    background-image: url(../images/header/menu-burger.png)
+  &__elipsis
+    width: 4px
+    height: 20px
+    background-image: url(../images/header/menu-elipsis.png)
+.cart-link
+  display: flex
+  font-size: 14px
+  line-height: 17px
+  height: 17px
+  color: #ffffff
+  &__icon 
+    background-image: url(../images/header/icon-cart.png)
+    width: 17px
+    margin-right: 10px
+.ml-5
+  margin-left: 5px  
+.ml-10 
+  margin-left: 10px
+.mr-20
+  margin-right: 20px 
+    
+
+@media (max-width: 720px)
+  .header
+    &__burger,
+    &__elipsis 
+      display: block
+    &__burger
+      margin-right: 35px 
+    &__elipsis 
+      margin-left: 35px   
+    &__wrap
+      display: flex
+      align-items: center 
+@media (max-width: 540px)
+  .header
+    &__burger
+      margin-right: 20px
+    
+   
+  
+  

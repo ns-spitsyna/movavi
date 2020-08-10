@@ -1,0 +1,157 @@
+.small
+  font-size: 16px
+.products 
+  font-size: 16px
+  padding-top: 32px
+  position: relative
+  &__container
+    display: flex
+    justify-content: center
+.product
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  position: relative
+  width: 348px
+  text-align: center 
+  background-color: #fff
+  border-radius: 6px
+  padding: 33px 20px 25px 
+  margin: 64px 32px 60px 0px
+  &:last-child
+    margin-right: 0px
+  &__title
+    font-family: "OpenSansBold"
+    color: $title-color
+  &__subtitle
+    color: $light 
+    margin-top: 5px;
+  &__stiker
+    position: absolute;
+    top: -32px;
+    height: 32px;
+    width: 100%;
+    left: 0;
+    border-radius: 6px 6px 0px 0px
+    font-size: 14px
+    line-height: 32px;
+    text-align: center
+    background-color: $sticker-color  
+    color: #ffffff
+    text-transform: uppercase
+  &__date
+    display: flex
+    height: 16px
+    margin: 24px 0px 31px 0px
+  &__info
+    font-size: 14px
+    text-align: left
+  &__icon
+    background-image: url(../images/products/clock.png)
+    width: 18px
+    height: 16px
+    background-repeat: no-repeat
+    margin-top: 1px
+.product-list
+  padding: 0
+  margin-bottom: 0
+  &__item
+    list-style: none
+    display: flex;
+    justify-content: space-between
+    text-align: left
+    line-height: 16px
+    margin-bottom: 25px
+.full
+  color: $light
+  text-decoration: line-through
+.discount, .full-sale
+  font-size: 44px 
+  line-height: 44px;    
+.product__button
+  width: 100%
+  height: 46px
+  font-size: 16px
+  border-radius: 3px
+.product-list-description
+  padding: 0 20px
+  margin: 0
+  &__item  
+    margin-bottom: 25px
+    list-style: disc
+    text-align: left
+    line-height: 16px
+.shadow
+  box-shadow: 0 6px 16px 0.5px #cccccc
+.best
+  border-radius: 0px 0px 6px 6px
+.payment
+  padding-bottom: 60px
+  border-bottom: 1px solid #bdbdbd
+  display: flex
+  height: 30px
+  width: 100%
+  align-content: center
+  align-items: center
+  justify-content: center
+  &__icon
+    margin-right: 50px
+    &:last-child
+      margin-right: 0px
+    
+@media (max-width: 960px)
+  .container
+    padding-left: 16px
+    padding-right: 16px
+  .product
+    width: 288px
+    padding: 33px 25px 25px
+    &__date
+      height: 32px
+  .product-list 
+    &__item  
+      margin-bottom: 18px
+      line-height: 20px
+  .product-list-description
+    &__item  
+      margin-bottom: 18px
+      line-height: 18px
+  .full
+    margin-bottom: 10px   
+@media (min-width: 541px) and (max-width: 720px)    
+  .product
+    width: 100%
+    text-align: left
+    flex-direction: row
+    margin: 30px 0px
+    padding: 32px 25px 3px
+    &-block 
+      margin-right: 30px 
+      &:last-child
+        margin-right: 0px
+    &__button
+      width: 86%
+    &__date
+      margin: 14px 0 10px 0 
+    &s
+      &__container
+        flex-wrap: wrap
+        margin-bottom: 35px
+  .left-block
+    width: 50%
+  .right-block
+    width: 45%  
+  .mt-35
+    margin-top: 35px   
+  
+@media (max-width: 540px)  
+  .payment
+    justify-content: space-between   
+    &__icon
+      margin-right: 0px
+  .product 
+    width: 100% 
+    margin: 35px 32px 60px 0px
+    &s
+      &__container
+         display: block   
